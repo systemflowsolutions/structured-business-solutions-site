@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Architect Behind the Order | Operations Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --navy: #1B263B;
+            --slate: #415A77;
+            --light-slate: #778DA9;
+            --sage: #84A98C;
+            --off-white: #F8F9FA;
+            --text-gray: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--off-white);
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--navy);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--navy) 0%, #0D1B2A 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* Manifesto Section */
+        .manifesto {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .manifesto-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .manifesto-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .accent-line {
+            width: 50px;
+            height: 3px;
+            background: var(--sage);
+            margin-bottom: 2rem;
+        }
+
+        /* Features/Differentiators */
+        .features {
+            padding: 80px 0;
+            background: var(--off-white);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-bottom: 4px solid var(--slate);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-bottom: 4px solid var(--sage);
+        }
+
+        .feature-card i {
+            color: var(--sage);
+            margin-bottom: 1rem;
+        }
+
+        /* Blockquote */
+        .quote-section {
+            padding: 100px 0;
+            background: var(--navy);
+            color: white;
+            text-align: center;
+        }
+
+        blockquote {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* CTA Button */
+        .btn {
+            display: inline-block;
+            background: var(--sage);
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 2px;
+            transition: background 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .btn:hover {
+            background: #6b8e73;
+        }
+
+        .signature {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            color: var(--navy);
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .manifesto-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-content">
+            <a href="#" class="logo">STRATEGIC OPS</a>
+            <div>
+                </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Complexity, Simplified.</h1>
+            <p>High-level operations and systems strategy for visionary founders ready to reclaim their time and scale with intention.</p>
+            <a href="#contact" class="btn">Book Your Operations Audit</a>
+        </div>
+    </header>
+
+    <section class="manifesto">
+        <div class="container">
+            <div class="manifesto-grid">
+                <div class="manifesto-text">
+                    <div class="accent-line"></div>
+                    <h2>The Architect Behind the Order</h2>
+                    <p>You didn’t start your business to spend forty hours a week inside a project management tool. You started it to innovate and lead.</p>
+                    <br>
+                    <p>I’m here to bridge the gap between your vision and your infrastructure. I don’t just "organize files"—I architect ecosystems that allow for sustainable growth.</p>
+                    <div class="signature">Your Name</div>
+                </div>
+                <div style="background: var(--light-slate); height: 400px; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white;">
+                    [ Professional Photography ]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section">
+        <div class="container">
+            <blockquote>"Efficiency is not about doing more things; it’s about creating the space to do the right things."</blockquote>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">The Differentiator</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i data-lucide="layers"></i>
+                    <h3>Tactical Expertise</h3>
+                    <p>Deep proficiency in the modern tech stack: Notion, ClickUp, Zapier, and Airtable.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="eye"></i>
+                    <h3>Strategic Intuition</h3>
+                    <p>I see the 10,000-foot view and the 1-inch details simultaneously to prevent bottlenecks.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="users"></i>
+                    <h3>Human-Centric</h3>
+                    <p>Building systems that people actually want to use, ensuring your team adopts the change.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 60px 0; text-align: center; background: white;">
+        <div class="container">
+            <h3>Ready to build a business that runs itself?</h3>
+            <br>
+            <a href="mailto:hello@example.com" class="btn">Let’s Discuss Your Infrastructure</a>
+            <p style="margin-top: 2rem; font-size: 0.8rem; color: var(--light-slate);">© 2024 Strategic Ops Consulting. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
